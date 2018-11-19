@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <link href="css/playmusic.css" rel="stylesheet">  <!-- css playmusic -->
+	<!-- Chỉnh CSS của trang tại đây-->
+	<style>
+	
+		.body{
+height:100%;
+}
+.container{
+    padding:50px 0px;
+    
+    overflow:hidden;
+    font-size: 16px;
+    margin:0 auto;
+    color:#fff;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container h1{
+    color:#fff;
+    background:#5cb85c;
+    opacity: 1;
+    width:700px;
+    margin:0 auto;
+}
+.container .lyric{
+    width:700px;
+    margin:0 auto;
+    height:350px;
+    overflow-y: auto; 
+    /*color:#333;*/
+    line-height: 1.5;
+    font-weight: bold;
+}
+@media screen and (max-width:992px){
+    .container{
+         width:100%;
+    }
+
+}
+@media screen and (max-width:768px){
+    .container h1{
+    width:100%;
+ }
+    .container{
+         width:100%;
+    }
+    .container .lyric{
+     height:200px;
+    }
+}
+	</style>
+</head>
+
+<body>
+    <audio  autoplay="autoplay">
+        <source src="music/nhungnamthangay.mp3" type="audio/mp3">    <!-- Chèn đường dẫn nhạc vào -->
+    </audio>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Danh sách hình sẽ đổi trong bài hát. Nếu chỉ để 1 hình thì <=> tắt chức năng hình tự đổi-->
+            <img src="images/nhungnamthangay/slide-1.jpg" />
+             <img src="images/nhungnamthangay/slide-2.jpg" />
+              <img src="images/nhungnamthangay/slide-3.jpg" />
+               <img src="images/nhungnamthangay/slide-4.jpg" />
+                <img src="images/nhungnamthangay/slide-5.jpg" />
+                 <img src="images/nhungnamthangay/slide-6.jpg" />
+                  <img src="images/nhungnamthangay/slide-7.jpg" />
+                   <img src="images/nhungnamthangay/slide-8.jpg" />
+                    <img src="images/nhungnamthangay/slide-9.jpg" />
+                     <img src="images/nhungnamthangay/slide-10.jpg" />
+                      <img src="images/nhungnamthangay/slide-11.jpg" />
+                       <img src="images/nhungnamthangay/slide-12.jpg" />
+          
+            <!-- Nội dung thẻ h1 này các bạn thay đổi tuỳ ý -->
+            <h1 id="lyric1" class="lyric1"></h1>
+
+        </div>
+
+    </div>
+    <div class="container">   <!-- trong div này các bạn có thể ghi gì tuỳ ý nhé. Mình thì dán tên và lời bài hát vào -->
+        <h1>Những Năm Tháng Ấy - Hu Xia (Hồ Hạ)</h1>
+        <div class="lyric">
+            <pre>
+         又回到最初的起点 
+Yòu huí dào zuìchū de qǐdiǎn 
+Lại trở về điểm xuất phát ban đầu 
+记忆中你青涩的脸 
+Jì yì zhōng nǐ qīng sè de liǎn 
+Gương mặt non nớt của em trong ký ức 
+我们终於来到了这一天 
+Wǒmen zhōng yú lái dàole zhè yītiān 
+Cuối cùng chúng ta cũng đi đến được ngày này 
+桌垫下的老照片 
+Zhuō diàn xià de lǎo zhàopiàn 
+Bức ảnh cũ dưới mặt bản 
+无数回忆连结 
+Wúshù huíyì liánjié 
+Biết bao hổi ức nối tiếp nhau 
+今天男孩要赴女孩最后的约 
+Jīntiān nánhái yào fù nǚhái zuìhòu de yuē 
+Hôm nay cậu trai đi đến gặp cô gái trong buổi hẹn cuối cùng. 
+又回到最初的起点 
+Yòu huí dào zuìchū de qǐdiǎn 
+Lại trở về điểm xuất phát ban đầu 
+呆呆地站在镜子前 
+Dāi dāi de zhàn zài jìngzi qián 
+Ngốc nghếch đứng trước gương 
+笨拙系上红色领带的结 
+Bènzhuō xì shàng hóngsè lǐngdài de jié 
+Vụng về thắt chiếc cà vạt đỏ 
+将头发梳成大人模样 
+Jiāng tóufǎ shū chéng dàrén múyàng 
+Chải tóc thành bộ dạng người lớn 
+穿上一身帅气西装 
+Chuān shàng yīshēn shuàiqì xīzhuāng 
+Mặc một bộ âu phục lịch lãm 
+等会儿见你一定比想像美 
+Děng huì er jiàn nǐ yīdìng bǐ xiǎngxiàng měi 
+Lát nữa gặp em nhất định sẽ đẹp hơn cả ngay trong tưởng tượng 
+好想再回到那些年的时光 
+Hǎo xiǎng zài huí dào nàxiē nián de shíguāng 
+Rất muốn lại được trở về thời gian của những năm tháng ấy 
+回到教室座位前后,故意讨你温柔的骂 
+Huí dào jiàoshì zuòwèi qiánhòu, gùyì tǎo nǐ wēnróu de mà 
+Trở về chỗ ngồi trước, chỗ ngổi sau trong lớp, cố ý để được em mắng dịu dàng. 
+黑板上排列组合你舍得解开吗? 
+Hēibǎn shàng páiliè zǔhé nǐ shěde jiě kāi ma? 
+Dãy số trên bảng đen em có nỡ giải đáp không? 
+谁与谁坐他又爱著她 
+Shuí yǔ shuí zuò tā yòu àizhe tā 
+Ai ngồi cạnh ai, cậu ấy đã yêu cô ấy mất rồi. 
+那些年错过的大雨 
+Nàxiē nián cuòguò de dàyǔ 
+Cơn mưa bỏ lại của những năm tháng ấy 
+那些年错过的爱情 
+Nàxiē nián cuòguò de àiqíng 
+Tình yêu bỏ lại của những năm tháng ấy 
+好想拥抱你拥抱错过的勇气 
+Hǎo xiǎng yǒng bào nǐ yǒng bào cuò guò de yǒng qì 
+Thật muốn ôm lấy em, ôm lấy dũng khí đã để trôi xa 
+曾经想征服全世界 
+Céngjīng xiǎng zhēngfú quán shìjiè 
+Đã từng muốn chinh phục cả thế giới 
+到最后回首才发现 
+Dào zuìhòu huíshǒu cái fāxiàn 
+Nhưng đến cuối cùng quay đầu nhìn lại mới nhận ra 
+这世界滴滴点点全部都是你 
+Zhè shìjiè dī dī diǎndiǎn quánbù dōu shì nǐ 
+Từng mảnh từng mảnh trong thế giới này đều là em. 
+那些年错过的大雨 
+Nà xiē nián cuò guò de dà yǔ 
+Cơn mưa bỏ lại của những năm tháng ấy 
+那些年错过的爱情 
+Nàxiē nián cuòguò de àiqíng 
+Tình yêu bỏ lại của những năm tháng ấy 
+好想告诉你,告诉你我没有忘记 
+Hǎo xiǎng gàosu nǐ, gàosu nǐ wǒ méiyǒu wàngjì 
+Thật muốn nói với em rằng anh vẫn chưa hề quên 
+那天晚上满天星星 
+Nèi tiān wǎn shàng mǎn tiān xīng xīng 
+Bầu trời đầy sao trong đêm hôm ấy 
+平行时空下的约定 
+Píng xíng shí kōng xià de yuē dìng 
+Và hẹn ước dưới vòm trời 
+再一次相遇我会紧紧抱著你 
+Zài yī cì xiāng yù wǒ huì jǐn jǐn bàozhe nǐ 
+Nếu được gặp lại em, anh sẽ ôm lấy em thật chặt 
+紧紧抱著你 
+Jǐn jǐn bàozhe nǐ 
+Ôm chặt lấy em... 
+又回到最初的起点 
+Yòu huí dào zuìchū de qǐdiǎn 
+Lại trở về điểm xuất phát ban đầu 
+呆呆地站在镜子前 
+Dāi dāi de zhàn zài jìngzi qián 
+Ngốc nghếch đứng trước gương 
+笨拙系上红色领带的结 
+Bènzhuō xì shàng hóngsè lǐngdài de jié 
+Vụng về thắt chiếc cà vạt đỏ 
+将头发梳成大人模样 
+Jiāng tóufǎ shū chéng dàrén múyàng 
+Chải tóc thành bộ dạng người lớn 
+穿上一身帅气西装 
+Chuān shàng yīshēn shuàiqì xīzhuāng 
+Mặc một bộ âu phục lịch lãm 
+等会儿见你一定比想像美 
+Děng huì er jiàn nǐ yīdìng bǐ xiǎngxiàng měi 
+Lát nữa gặp em nhất định sẽ đẹp hơn cả ngay trong tưởng tượng 
+好想再回到那些年的时光 
+Hǎo xiǎng zài huí dào nàxiē nián de shíguāng 
+Rất muốn lại được trở về thời gian của những năm tháng ấy 
+回到教室座位前后,故意讨你温柔的骂 
+Huí dào jiàoshì zuòwèi qiánhòu, gùyì tǎo nǐ wēnróu de mà 
+Trở về chỗ ngồi trước, chỗ ngổi sau trong lớp, cố ý để được em mắng dịu dàng. 
+黑板上排列组合你舍得解开吗? 
+Hēibǎn shàng páiliè zǔhé nǐ shěde jiě kāi ma? 
+Dãy số trên bảng đen em có nỡ giải đáp không? 
+谁与谁坐他又爱著她 
+Shuí yǔ shuí zuò tā yòu àizhe tā 
+Ai ngồi cạnh ai, cậu ấy đã yêu cô ấy mất rồi. 
+那些年错过的大雨 
+Nàxiē nián cuòguò de dà yǔ 
+Cơn mưa bỏ lại của những năm tháng ấy 
+那些年错过的爱情 
+Nàxiē nián cuòguò de àiqíng 
+Tình yêu bỏ lại của những năm tháng ấy 
+好想拥抱你拥抱错过的勇气 
+Hǎo xiǎng yǒngbào nǐ yǒngbào cuòguò de yǒngqì 
+Thật muốn ôm lấy em, ôm lấy dũng khí đã để trôi xa 
+曾经想征服全世界 
+Céngjīng xiǎng zhēngfú quán shìjiè 
+Đã từng muốn chinh phục cả thế giới 
+到最后回首才发现 
+Dào zuìhòu huíshǒu cái fāxiàn 
+Nhưng đến cuối cùng quay đầu nhìn lại mới nhận ra 
+这世界滴滴点点全部都是你 
+Zhè shìjiè dī dī diǎndiǎn quánbù dōu shì nǐ 
+Từng mảnh từng mảnh trong thế giới này đều là em. 
+那些年错过的大雨 
+Nàxiē nián cuòguò de dà yǔ 
+Cơn mưa bỏ lại của những năm tháng ấy 
+那些年错过的爱情 
+Nàxiē nián cuòguò de àiqíng 
+Tình yêu bỏ lại của những năm tháng ấy 
+好想告诉你,告诉你我没有忘记 
+Hǎo xiǎng gàosu nǐ, gàosu nǐ wǒ méiyǒu wàngjì 
+Thật muốn nói với em rằng anh vẫn chưa hề quên 
+那天晚上满天星星 
+Nèitiān wǎnshàng mǎn tiān xīngxīng 
+Bầu trời đầy sao trong đêm hôm ấy 
+平行时空下的约定 
+Píngxíng shíkōng xià de yuēdìng 
+Và hẹn ước dưới vòm trời 
+再一次相遇我会紧紧抱著你 
+Zài yīcì xiāng yù wǒ huì jǐn jǐn bàozhe nǐ 
+Nếu được gặp lại em, anh sẽ ôm lấy em thật chặt 
+紧紧抱著你 
+Jǐn jǐn bàozhe nǐ 
+Ôm chặt lấy em... 
+那些年错过的大雨 
+Nàxiē nián cuòguò de dà yǔ 
+Cơn mưa bỏ lại của những năm tháng ấy 
+那些年错过的爱情 
+Nàxiē nián cuòguò de àiqíng 
+Tình yêu bỏ lại của những năm tháng ấy 
+好想告诉你,告诉你我没有忘记 
+Hǎo xiǎng gàosu nǐ, gàosu nǐ wǒ méiyǒu wàngjì 
+Thật muốn nói với em rằng anh vẫn chưa hề quên 
+那天晚上满天星星 
+Nèitiān wǎnshàng mǎn tiān xīngxīng 
+Bầu trời đầy sao trong đêm hôm ấy 
+平行时空下的约定 
+Píngxíng shíkōng xià de yuēdìng 
+Và hẹn ước dưới vòm trời 
+再一次相遇我会紧紧抱著你 
+Zài yīcì xiāng yù wǒ h 
+         </pre>
+        </div>
+
+    </div>
+    <!-- Hiển thị thời gian bài hát đếm lùi -->
+    <div id="timeMusic">
+        <span id="minuteOfMusic"></span>:<span id="secondOfMusic"></span>
+    </div>
+
+
+   <script src="js/main.js" type="text/javascript"></script>
+    <script>
+
+        var duration = 10000;   // Thời gian chờ chuyển hình (tính theo đơn vị milisecond)
+        // lời bài hát và giây phát. content2 là lời dịch bài hát nếu có. Nếu không có thì các bạn gán content2 = ""
+        var lyrics = [
+            { content: "You hui dao zui chu de qi dian ji yi zhong ni qing se de lian", content2:"Lại trở về điểm xuất phát ban đầu, gương mặt non nớt của em trong ký ức  ", showAt: 18 },
+            { content: "Wo men zhong yu lai dao le zhe yi tian",content2:"Cuối cùng chúng ta cũng đi đến được ngày này  ", showAt: 24 },
+            { content: "Zhuo dian xia de lao zhao pian wu shu hui yi lian jie ",content2:"Bức ảnh cũ dưới mặt bản, biết bao hổi ức nối tiếp nhau ", showAt: 30 },
+            { content: "Jin tian nan hai yao fu nuu hai zui hou de yue",content2:"Hôm nay cậu trai đi đến gặp cô gái trong buổi hẹn cuối cùng.", showAt: 36 },
+
+            { content: "You hui dao zui chu de qi dian dai dai de zhan zai jing zi qian",content2:"Lại trở về điểm xuất phát ban đầu, ngốc nghếch đứng trước gương ", showAt: 42 },
+            { content: "Ben zhuo ji shang hong se ling dai de jie ",content2:"Vụng về thắt chiếc cà vạt đỏ ", showAt: 48 },
+            { content: "Jiang tou fa shu cheng da ren mo yang chuan shang yi shen shuai qi xi zhuang ",content2:"Chải tóc thành bộ dạng người lớn, mặc một bộ âu phục lịch lãm ", showAt: 53 },
+            { content: "Deng hui er jian ni yi ding bi xiang xiang mei ",content2:"Lát nữa gặp em nhất định sẽ đẹp hơn cả ngay trong tưởng tượng ", showAt: 60 },
+
+            { content: "Hao xiang zai hui dao na xie nian de shi guang ",content2:"Rất muốn lại được trở về thời gian của những năm tháng ấy ", showAt: 67 },
+            { content: "Hui dao jiao shi zuo wei qian hou gu yi tao ni wen rou de ma",content2:"Trở về chỗ ngồi trước, chỗ ngổi sau trong lớp, cố ý để được em mắng dịu dàng.", showAt: 71 },
+            { content: "Hei ban shang pai lie zu he ni she de jie kai ma",content2:"Dãy số trên bảng đen em có nỡ giải đáp không? ", showAt: 79 },
+            { content: "Shei yu shei zuo ta you ai zhe ta",content2:"Ai ngồi cạnh ai, cậu ấy đã yêu cô ấy mất rồi. ", showAt: 85 },
+
+            { content: "Na xie nian cuo guo de da yu na xie nian cuo guo de ai qing",content2:"Cơn mưa bỏ lại của những năm tháng ấy. Tình yêu bỏ lại của những năm tháng ấy ", showAt: 94 },
+            { content: "Hao xiang yong bao ni yong bao cuo guo de yong qi ", content2:"Thật muốn ôm lấy em, ôm lấy dũng khí đã để trôi xa ",showAt: 100 },
+            { content: "Ceng jing xiang zheng fu quan shi jie",content2:"Đã từng muốn chinh phục cả thế giới  ", showAt: 106 },
+            { content: "Dao zui hou hui shou cai fa xian ", content2:"nhưng đến cuối cùng quay đầu nhìn anh lại mới nhận ra", showAt:107},
+            { content: "Zhe shi jie di di dian dian quan bu dou shi ni ", content2:"Từng mảnh từng mảnh trong thế giới này đều là em.",showAt: 111 },
+            { content: "Na xie nian cuo guo de da yu na xie nian cuo guo de ai qing ",content2:"Cơn mưa bỏ lại của những năm tháng ấy, tình yêu bỏ lại của những năm tháng ấy ", showAt: 118 },
+            { content: "Hao xiang gao su ni gao su ni wo mei you wang ji  ", content2:"Thật muốn nói với em rằng anh vẫn chưa hề quên ",showAt: 124 },
+            { content: "Na tian wan shang man tian xing xing ping xing shi kong xia de yue ding  ",content2:"Bầu trời đầy sao trong đêm hôm ấy và hẹn ước dưới vòm trời ", showAt: 130 },
+            { content: "Zai yi ci xiang yu wo hui jin jin bao zhe ni  ",content2:"Nếu được gặp lại em, anh sẽ ôm lấy em thật chặt ", showAt: 135 },
+            { content: "Jin jin bao zhe ni  ",content2:"Ôm chặt lấy em... ", showAt: 141 },
+
+            { content: "You hui dao zui chu de qi dian dai dai de zhan zai jing zi qian",content2:"Lại trở về điểm xuất phát ban đầu, ngốc nghếch đứng trước gương ", showAt: 158 },
+            { content: "Ben zhuo ji shang hong se ling dai de jie ", content2:"Vụng về thắt chiếc cà vạt đỏ",showAt: 164 },
+            { content: "Jiang tou fa shu cheng da ren mo yang chuan shang yi shen shuai qi xi zhuang ",content2:"Chải tóc thành bộ dạng người lớn, mặc một bộ âu phục lịch lãm ", showAt: 169 },
+            { content: "Deng hui er jian ni yi ding bi xiang xiang mei ",content2:"Lát nữa gặp em nhất định sẽ đẹp hơn cả ngay trong tưởng tượng ", showAt: 176 },
+
+            { content: "Hao xiang zai hui dao na xie nian de shi guang ",content2:"Rất muốn lại được trở về thời gian của những năm tháng ấy ", showAt: 183 },
+            { content: "Hui dao jiao shi zuo wei qian hou gu yi tao ni wen rou de ma",content2:"Trở về chỗ ngồi trước, chỗ ngổi sau trong lớp, cố ý để được em mắng dịu dàng.", showAt: 187 },
+            { content: "Hei ban shang pai lie zu he ni she de jie kai ma",content2:"Dãy số trên bảng đen em có nỡ giải đáp không? ", showAt: 195 },
+            { content: "Shei yu shei zuo ta you ai zhe ta",content2:"Ai ngồi cạnh ai, cậu ấy đã yêu cô ấy mất rồi. ", showAt: 201 },
+
+            { content: "Na xie nian cuo guo de da yu na xie nian cuo guo de ai qing",content2:"Cơn mưa bỏ lại của những năm tháng ấy. Tình yêu bỏ lại của những năm tháng ấy ", showAt: 210 },
+            { content: "Hao xiang yong bao ni yong bao cuo guo de yong qi ", content2:"Thật muốn ôm lấy em, ôm lấy dũng khí đã để trôi xa ",showAt: 216 },
+                       { content: "Ceng jing xiang zheng fu quan shi jie",content2:"Đã từng muốn chinh phục cả thế giới  ", showAt: 221 },
+            { content: "Dao zui hou hui shou cai fa xian ", content2:"nhưng đến cuối cùng quay đầu nhìn anh lại mới nhận ra", showAt:222},
+            { content: "Zhe shi jie di di dian dian quan bu dou shi ni ",content2:"Từng mảnh từng mảnh trong thế giới này đều là em.", showAt: 227 },
+            { content: "Na xie nian cuo guo de da yu na xie nian cuo guo de ai qing ",content2:"Cơn mưa bỏ lại của những năm tháng ấy, tình yêu bỏ lại của những năm tháng ấy ", showAt: 234 },
+            { content: "Hao xiang gao su ni gao su ni wo mei you wang ji  ", content2:"Thật muốn nói với em rằng anh vẫn chưa hề quên ",showAt: 240 },
+            { content: "Na tian wan shang man tian xing xing ping xing shi kong xia de yue ding  ",content2:"Bầu trời đầy sao trong đêm hôm ấy và hẹn ước dưới vòm trời ", showAt: 246 },
+            { content: "Zai yi ci xiang yu wo hui jin jin bao zhe ni  ", content2: "Nếu được gặp lại em, anh sẽ ôm lấy em thật chặt ", showAt: 251 },
+            { content: "Jin jin bao zhe ni  ", content2:"Ôm chặt lấy em... ",showAt: 257 },
+
+            { content: "Na xie nian cuo guo de da yu na xie nian cuo guo de ai qing", content2:"Cơn mưa bỏ lại của những năm tháng ấy. Tình yêu bỏ lại của những năm tháng ấy ",showAt: 285 },
+            { content: "Hao xiang yong bao ni yong bao cuo guo de yong qi ",content2:"Thật muốn ôm lấy em, ôm lấy dũng khí đã để trôi xa ", showAt: 291 },
+                        { content: "Ceng jing xiang zheng fu quan shi jie",content2:"Đã từng muốn chinh phục cả thế giới  ", showAt: 297 },
+            { content: "Dao zui hou hui shou cai fa xian ", content2:"nhưng đến cuối cùng quay đầu nhìn anh lại mới nhận ra", showAt:298},
+            { content: "Zhe shi jie di di dian dian quan bu dou shi ni ",content2:"Từng mảnh từng mảnh trong thế giới này đều là em.", showAt: 303 },
+            { content: "Na xie nian cuo guo de da yu na xie nian cuo guo de ai qing ", content2:"Cơn mưa bỏ lại của những năm tháng ấy, tình yêu bỏ lại của những năm tháng ấy ",showAt: 309 },
+            { content: "Hao xiang gao su ni gao su ni wo mei you wang ji  ",content2:"Thật muốn nói với em rằng anh vẫn chưa hề quên ", showAt: 315 },
+            { content: "Na tian wan shang man tian xing xing ping xing shi kong xia de yue ding  ",content2:"Bầu trời đầy sao trong đêm hôm ấy và hẹn ước dưới vòm trời ", showAt: 321 },
+            { content: "Zai yi ci xiang yu wo hui jin jin bao zhe ni  ",content2:"Nếu được gặp lại em, anh sẽ ôm lấy em thật chặt ", showAt: 327 },
+            { content: "Jin jin bao zhe ni  ",content2:"Ôm chặt lấy em... ", showAt: 333 }
+        ]
+        // Bật hoặc tắt vietsub đi kèm  (nếu bài hát là nhạc Việt thì để chắc chắn để false thôi nhé vì làm gì có vietsub ^^)
+        var enablePlayWidthContent2 = true;
+        // Bật hoặc tắt thay đổi màu nền của lời bài hát
+        var enableChangeBackgroundLyric = true;
+        // Lời giới thiệu về bài hát
+        var introduction = "Các bạn đang nghe ca khúc trích trong phim Những năm tháng ấy. Design by Tuấn Nguyễn";
+        // thời lượng bài hát
+        var minuteOfMusic = 6;
+        var secondOfMucsic = 11;
+      
+    </script>
+<script type="text/javascript" src="js/playmusic.js"></script>  <!-- javascript playmusic -->
+
+</body>
+
+</html>
